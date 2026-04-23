@@ -10,6 +10,8 @@ int main() {
     float area1;
     float pib1;
     int pontosTuristicos1;
+    float densidadePopulacional1;
+    float PibPerCapita1;
 
 //// saudação inicial ao usuario
    printf("Bem Vindo ao Super Trunfo de Cidades Brasileiras! \n");
@@ -43,6 +45,9 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontosTuristicos1);
 
+    printf("A densidade populacional da cidade é: %.2f habitantes/km²\n", (float)populacao1 / area1);
+    printf("O PIB per capita da cidade é: %.2f reais\n", (pib1 * 1000000000) / populacao1); 
+
     printf(" Perfeito!! Voce cadastrou a Carta 1! \n");
 
     // ===== CARTA 2 =====
@@ -53,6 +58,8 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
+    float densidadePopulacional2;
+    float PibPerCapita2;
 
     // Entrada de dados da Carta 2
     
@@ -80,33 +87,13 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontosTuristicos2);
 
-
+    printf("A densidade populacional da cidade é: %.2f habitantes/km²\n", (float)populacao2 / area2);
+    printf("O PIB per capita da cidade é: %.2f reais\n", (pib2 * 1000000000) / populacao2);
     // ===== EXIBIÇÃO =====
 
     printf(" Perfeito!! Voce cadastrou as duas cartas!  \n");
 
-    printf(" Agora vamos comparar as cartas e descobrir qual é a melhor! \n");
 
-
-    // Carta 1
-    printf("\nCarta 1:\n");
-    printf("Estado: %c\n", estado1);
-    printf("Codigo: %s\n", codigo1);
-    printf("Nome da Cidade: %s\n", cidade1);
-    printf("Populacao: %d\n", populacao1);
-    printf("Area: %.2f km²\n", area1);
-    printf("PIB: %.2f bilhoes de reais\n", pib1);
-    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
-
-    // Carta 2
-    printf("\nCarta 2:\n");
-    printf("Estado: %c\n", estado2);
-    printf("Codigo: %s\n", codigo2);
-    printf("Nome da Cidade: %s\n", cidade2);
-    printf("Populacao: %d\n", populacao2);
-    printf("Area: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhoes de reais\n", pib2);
-    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
 
     return 0;
 }
